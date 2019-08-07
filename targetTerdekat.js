@@ -1,5 +1,5 @@
 function targetTerdekat(arr) {
-  var hasil = arr.length;
+  var output = arr.length;
   var posisiO = arr.indexOf("o");
   // console.log(posisiO);
   if (arr.indexOf("x") === -1) {
@@ -9,13 +9,13 @@ function targetTerdekat(arr) {
       if (arr[i] === "x") {
         var selisihOX = Math.abs([i] - posisiO);
         // console.log(selisihOX);
-        if (selisihOX < hasil) {
-          hasil = selisihOX;
+        if (selisihOX < output) {
+          output = selisihOX;
         }
       }
     }
   }
-  return hasil;
+  return output;
 }
 
 // TEST CASES
