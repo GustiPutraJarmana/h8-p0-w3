@@ -1,8 +1,8 @@
 function tentukanDeretAritmatika(arr) {
   var aritmatika = true;
-  var selisih = Math.abs(arr[1] - arr[0]);
+  var selisih = arr[1] - arr[0];
   for (var i = arr.length - 1; i > 0; i--) {
-    var perselisihan = Math.abs(arr[i] - arr[i - 1]);
+    var perselisihan = arr[i] - arr[i - 1];
     if (selisih !== perselisihan) {
       aritmatika = false;
     }
