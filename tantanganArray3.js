@@ -56,7 +56,7 @@ function dataHandling2(input) {
   var sort = date.sort(function(a, b) {
     return b - a;
   });
-  var join = date.join("-");
+  var join = input[3].split("/").join("-");
   var nama = input[1].slice(0, 15);
 
   console.log(input);
