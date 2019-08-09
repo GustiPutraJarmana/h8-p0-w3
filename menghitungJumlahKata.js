@@ -6,7 +6,6 @@ function hitungJumlahKata(kalimat) {
       output.push(kalimat[i]);
     }
   }
-  // console.log(output);
   return output.length;
 }
 
